@@ -1,0 +1,480 @@
+/*body*/
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poboto', sans-serif;
+    margin: 0 auto;
+
+}
+
+/* Header */
+.header {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(33, 59, 126, 1);
+}
+
+.site-menu {
+    align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-logo {
+    width: auto;
+}
+
+.site-menu>li {
+    display: flex;
+    min-height: 80px;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 18px;
+    background-color: #213b7e;
+}
+
+.menu-link:hover {
+    background-color: #fff;
+    color: #213b7e;
+    text-decoration: none;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    min-height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    background-color: #EA5D21;
+    text-decoration: none;
+}
+
+/*Login popup*/
+.login-popup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    min-height: 418px;
+    padding: 26px 28px 56px;
+    border-color: #ffffff;
+    border: 1px solid #213b7e;
+    box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+}
+
+.popup-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 153px;
+    min-height: 50px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    background-color: #EA5D21;
+    text-decoration: none;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form>input {
+    width: 100%;
+    max-width: 444px;
+    min-height: 55px;
+    margin-bottom: 56px;
+    border: 1px solid #808080;
+}
+
+.Login-heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* main */
+.main-content {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 911px;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+
+.class-foto {
+    object-fit: cover;
+    width: 100%;
+    max-width: 523px;
+    height: 316px;
+}
+
+.main-heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-left: 70px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.17;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.16;
+}
+
+.subtitle {
+    padding: 0 2vw;
+}
+
+.intro-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.intro-aside {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: rgba(100, 100, 100, 1);
+}
+
+.intro-text>blockquote {
+    margin: 0;
+}
+
+.intro-text {
+    width: 100%;
+    max-width: 634px;
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.em-word {
+    color: #CF5510;
+    font-style: italic;
+}
+
+.strong-words {
+    font-weight: 700;
+}
+
+
+/*students*/
+.main-students {
+    max-width: 1202px;
+}
+
+.students {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1202px;
+    gap: 50px;
+}
+
+.student {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    /*outline: 1px solid #e43434;*/
+    background-color: #86C6F4;
+    flex: 1 1 0;
+    max-width: 200px;
+    height: 270px;
+}
+
+
+/*.student-now {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%);
+    right: -13px;
+    display: flex;
+    padding: 2px 5px;
+    border-radius: 20px;
+    background-color: #3AA828;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}*/
+
+@media (max-width: 1150px) {
+    .student {
+        max-width: calc(100% / 2);
+    }
+}
+
+.student img {
+    display: flex;
+    object-fit: contain;
+    object-position: bottom;
+    min-height: 270px;
+
+}
+
+.student-name {
+    margin: 0;
+    margin-bottom: 1em;
+    display: block;
+    text-align: center;
+}
+
+.student-my_page {
+    margin-bottom: 1em;
+    display: flex;
+    text-align: center;
+}
+
+/* About*/
+.main-about {
+    max-width: 820px;
+}
+
+.about-heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-left: 70px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.17;
+    margin-right: auto;
+}
+
+.video {
+    width: 70%;
+    min-height: 550px;
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+.about-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    margin-left: 100px;
+
+}
+
+/*my page*/
+
+.greetings {
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.heading {
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.17;
+    color: rgb(127, 255, 212);
+}
+
+.gulnara {
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: rgb(165, 42, 42);
+}
+
+.my>em {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.innop {
+    color: rgb(127, 255, 0);
+}
+
+/* Contakt*/
+
+.contakt-heading {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-contakts {
+    max-width: 820px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.contakt-address {
+    max-width: 820px;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.contakt-telefon {
+    max-width: 820px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.contakt-text {
+    max-width: 820px;
+    padding: 0 16px;
+}
+
+.contakt-maps {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 0 16px;
+}
+
+.yandex-maps {
+    width: 100%;
+}
+
+/* footer */
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(33, 59, 126, 1);
+}
+
+
+.copyright {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.innop-link {
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+/*Reponsive*/
+
+@media (max-width: 630px) {
+    .header {
+        justify-content: center;
+        padding: 1em 16px;
+        gap: 1em;
+    }
+
+    .site-logo {
+        width: 100%;
+        min-height: 80px;
+    }
+
+    .site-menu {
+        justify-content: center;
+    }
+}
+
+
+/* link */
+.active-link {
+    background-color: #fff;
+    color: #213b7e;
+    text-decoration: none;
+}
+
+/*GS*/
+.show-popup {
+    display: block;
+}
